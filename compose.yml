@@ -8,6 +8,7 @@ services:
       PASSWORD: "Fbi8520"
       RAM_SIZE: "12G"
       CPU_CORES: "4"
+      VGA: "virtio-gpu"
     devices:
       - /dev/kvm
       - /dev/net/tun
