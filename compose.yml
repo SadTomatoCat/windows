@@ -4,6 +4,14 @@ services:
     container_name: windows
     environment:
       VERSION: "11"
+      REGION: "en-UK"
+      KEYBOARD: "en-UK"
+      USERNAME: "SadCotato"
+      PASSWORD: "Fbi-8520"
+      RAM_SIZE: "14G"
+      CPU_CORES: "4"
+      DISK_SIZE: "400G"
+      DISK2_SIZE: "100G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -14,6 +22,7 @@ services:
       - 3389:3389/tcp
       - 3389:3389/udp
     volumes:
-      - ./windows:/storage
+      - ./Windows:/storage
+      - ./My files:/storage
     restart: always
     stop_grace_period: 2m
