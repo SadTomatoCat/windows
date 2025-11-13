@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "11"
+      VERSION: "10"
       USERNAME: "COTATO"
       PASSWORD: "Fbi8520"
       RAM_SIZE: "12G"
