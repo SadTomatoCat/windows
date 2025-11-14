@@ -4,12 +4,8 @@ services:
     container_name: windows
     environment:
       VERSION: "10"
-      USERNAME: "COTATO"
-      PASSWORD: "Fbi8520"
-      RAM_SIZE: "12G"
+      RAM_SIZE: "8G"
       CPU_CORES: "4"
-      DISK_SIZE: "22G"
-      DISK2_SIZE: "8G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -21,6 +17,5 @@ services:
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
-      - ./main:/storage2
     restart: always
     stop_grace_period: 2m
